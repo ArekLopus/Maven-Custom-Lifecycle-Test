@@ -1,0 +1,24 @@
+<component-set>
+  <components>
+	<component>
+	  <role>org.apache.maven.lifecycle.Lifecycle</role>
+	  <role-hint>custom-LC</role-hint>
+	  <implementation>org.apache.maven.lifecycle.Lifecycle</implementation>
+	  <configuration>
+		<id>acds_lifecycle</id>
+		<phases>
+		  <phase>phase1</phase>
+		  <phase>phase2</phase>
+		  <phase>phase3</phase>
+		  <phase>phase4</phase>
+		</phases>
+		<default-phases>
+		  <phase1>com.acds:custom-lifecycle:goal1-goal</phase1>
+		  <phase2>com.acds:custom-lifecycle:goal2-goal</phase2>
+		  <phase3>com.acds:custom-lifecycle:goal3</phase3>
+		  <phase4>com.acds:custom-lifecycle:goal4</phase4>
+		</default-phases>
+	  </configuration>
+	</component>
+  </components>
+</component-set>

@@ -1,0 +1,6 @@
+1. src/main/java -> zdefiniwane 4 klasy goal (@goal goal1-goal - tu definiuje sie nazwe)
+2. src/main/resources/META_INF/plexus/componets.xml -> definicja faz i przypisanie goal
+3. pom.xml -> <packaging>maven-plugin</packaging>! eclipse wywala error, ale działa mimo to
+	<dependency> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-plugin-plugin</artifactId>
+	zeby klasy z p1 widziały importy.
+4. test/pom.xml -> mozemy przetestowac, mvn phase4 -> wyswietla wszystkie 4 fazy
