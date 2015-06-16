@@ -4,3 +4,4 @@
 	<dependency> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-plugin-plugin</artifactId>
 	zeby klasy z p1 widziały importy.
 4. test/pom.xml -> mozemy przetestowac, mvn phase4 -> wyswietla wszystkie 4 fazy
+5. Wywałanie tylko goal np: 	mvn custom-lifecycle:goal1-goal,  mvn custom-lifecycle:goal4
